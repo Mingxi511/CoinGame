@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,45 +15,44 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoinFlipGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fko-Cg-gyE">
-                                <rect key="frame" x="61" y="175.66666666666666" width="64" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="coin"/>
-                                <connections>
-                                    <action selector="btnFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A2s-YE-VOO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hws-Ny-PRJ">
-                                <rect key="frame" x="175" y="175.66666666666666" width="64" height="64"/>
-                                <state key="normal" image="coin"/>
-                                <connections>
-                                    <action selector="btnFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5tf-Df-9Wa"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0b-Ng-HMb">
-                                <rect key="frame" x="290" y="175.66666666666666" width="64" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="coin"/>
-                                <connections>
-                                    <action selector="btnFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mar-45-qgH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbX-4q-ctE">
-                                <rect key="frame" x="188" y="464" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dbX-4q-ctE">
+                                <rect key="frame" x="168.5" y="464" width="39" height="30"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="resetBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Qw-XX-Q2H"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="                      " textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeH-uQ-u0h">
-                                <rect key="frame" x="106.99999999999999" y="338" width="199.66666666666663" height="60"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJb-B6-v2m">
+                                <rect key="frame" x="42" y="164" width="64" height="64"/>
+                                <state key="normal" image="coin"/>
+                                <connections>
+                                    <action selector="btnFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8E5-M3-7bn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKi-8y-qyn">
+                                <rect key="frame" x="269" y="164" width="64" height="64"/>
+                                <state key="normal" image="coin"/>
+                                <connections>
+                                    <action selector="btnFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vGr-rg-QJd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUr-To-fGF">
+                                <rect key="frame" x="155.5" y="164" width="64" height="64"/>
+                                <state key="normal" image="coin"/>
+                                <connections>
+                                    <action selector="btnFlip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0MO-g6-bjf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                      " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeH-uQ-u0h">
+                                <rect key="frame" x="112" y="303" width="150" height="60"/>
                                 <color key="backgroundColor" red="0.61293717616580312" green="0.16025377210872166" blue="0.44663608740708066" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.59727169690000004" green="0.1194080889" blue="0.41809731379999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="bCy-UA-hTx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -61,15 +60,28 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hws-Ny-PRJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="44R-5G-EzE"/>
+                            <constraint firstItem="XJb-B6-v2m" firstAttribute="top" secondItem="yUr-To-fGF" secondAttribute="top" id="BYa-ee-KAX"/>
+                            <constraint firstItem="dbX-4q-ctE" firstAttribute="top" secondItem="MeH-uQ-u0h" secondAttribute="bottom" constant="101" id="EMi-tI-UJJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dbX-4q-ctE" secondAttribute="trailing" constant="167.5" id="GXP-K7-VDw"/>
+                            <constraint firstItem="MeH-uQ-u0h" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="H2q-Br-LKI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tKi-8y-qyn" secondAttribute="trailing" constant="42" id="KDM-Y1-Z3s"/>
+                            <constraint firstItem="MeH-uQ-u0h" firstAttribute="top" secondItem="yUr-To-fGF" secondAttribute="bottom" constant="75" id="Oq4-ev-Yhr"/>
+                            <constraint firstItem="tKi-8y-qyn" firstAttribute="leading" secondItem="yUr-To-fGF" secondAttribute="trailing" constant="49.5" id="PaZ-0I-ss6"/>
+                            <constraint firstItem="yUr-To-fGF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="144" id="VGN-zJ-31h"/>
+                            <constraint firstItem="yUr-To-fGF" firstAttribute="top" secondItem="tKi-8y-qyn" secondAttribute="top" id="VvG-zP-KuF"/>
+                            <constraint firstItem="XJb-B6-v2m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="WKq-kX-UNy"/>
+                            <constraint firstItem="yUr-To-fGF" firstAttribute="leading" secondItem="XJb-B6-v2m" secondAttribute="trailing" constant="49.5" id="XO9-xn-uyH"/>
+                            <constraint firstItem="yUr-To-fGF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tGT-18-jmU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MeH-uQ-u0h" secondAttribute="trailing" constant="113" id="urB-KZ-4Py"/>
+                            <constraint firstItem="dbX-4q-ctE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="168.5" id="yxJ-h8-nOJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="infoLabel" destination="MeH-uQ-u0h" id="f1W-9e-EN1"/>
-                        <outletCollection property="btnCoins" destination="hws-Ny-PRJ" collectionClass="NSMutableArray" id="qNX-Vu-8bt"/>
-                        <outletCollection property="btnCoins" destination="r0b-Ng-HMb" collectionClass="NSMutableArray" id="DSa-UI-SP7"/>
-                        <outletCollection property="btnCoins" destination="Fko-Cg-gyE" collectionClass="NSMutableArray" id="bNL-fS-3I2"/>
+                        <outletCollection property="btnCoins" destination="XJb-B6-v2m" collectionClass="NSMutableArray" id="U9c-84-fVh"/>
+                        <outletCollection property="btnCoins" destination="yUr-To-fGF" collectionClass="NSMutableArray" id="4ww-Fv-h9M"/>
+                        <outletCollection property="btnCoins" destination="tKi-8y-qyn" collectionClass="NSMutableArray" id="Ck0-lL-wX6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

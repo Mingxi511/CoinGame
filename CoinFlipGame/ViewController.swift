@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var infoLabel: UILabel!
     
-    var count = 1
+    var count = 0
     var firstCoin = Int()
     var secondCoin = Int()
     var thirdCoin = Int()
@@ -70,7 +70,7 @@ class ViewController: UIViewController {
             UIView.transition(with: button, duration: 0.3, options: .transitionFlipFromRight, animations: nil, completion: nil)
             button.isEnabled = true
             infoLabel.text = ""
-            count = 1
+            count = 0
         }
     }
     
